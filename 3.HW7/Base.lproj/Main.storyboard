@@ -1,24 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CvT-Tj-O5d">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="__HW7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;View favorites&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAD-sp-IKE">
+                                <rect key="frame" x="117" y="267" width="159" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="3Yz-aJ-xnF"/>
+                                    <constraint firstAttribute="height" constant="28" id="Knq-Oh-ikQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="tintColor" systemColor="tintColor"/>
+                        <constraints>
+                            <constraint firstItem="sAD-sp-IKE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="164" id="AYG-kV-ENg"/>
+                            <constraint firstItem="sAD-sp-IKE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="wY5-gk-ct7"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="twu-WQ-P2t"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1909.1603053435115" y="3.5211267605633805"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="WSA-Zz-7gN">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CvT-Tj-O5d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bkP-YO-krb">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rVY-DI-tpZ" kind="relationship" relationship="viewControllers" id="s4h-tj-t3E"/>
+                        <segue destination="k5h-pg-z9d" kind="relationship" relationship="viewControllers" id="jrE-ha-ptX"/>
+                        <segue destination="o6T-4f-Azn" kind="relationship" relationship="viewControllers" id="0Cd-Vj-etp"/>
+                        <segue destination="iTB-gT-bOE" kind="relationship" relationship="viewControllers" id="1DS-s8-ov9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBh-s5-XYg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="3.5211267605633805"/>
+        </scene>
+        <!--Recent-->
+        <scene sceneID="h2f-6h-9en">
+            <objects>
+                <viewController id="iTB-gT-bOE" customClass="ViewController" customModule="__HW7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oU5-8N-gqf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;View recent&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyL-UE-JfI">
+                                <rect key="frame" x="117" y="266" width="159" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="9ZO-2r-P1G"/>
+                                    <constraint firstAttribute="width" constant="159" id="c1B-I4-5YK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ixF-Jf-7tC"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="yyL-UE-JfI" firstAttribute="leading" secondItem="ixF-Jf-7tC" secondAttribute="leading" constant="117" id="IzC-vT-0fv"/>
+                            <constraint firstItem="yyL-UE-JfI" firstAttribute="top" secondItem="ixF-Jf-7tC" secondAttribute="top" constant="207" id="cHL-z4-gbA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recent" image="clock" catalog="system" id="F8X-ZR-5Hq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVc-qq-KZ0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="-728"/>
+        </scene>
+        <!--Files-->
+        <scene sceneID="tVh-fa-2pr">
+            <objects>
+                <viewController id="k5h-pg-z9d" customClass="ViewController" customModule="__HW7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="at3-c1-lL8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;View files&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esM-gZ-8CY">
+                                <rect key="frame" x="117" y="222" width="159" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="6qY-yG-Hhh"/>
+                                    <constraint firstAttribute="height" constant="28" id="Amh-Zh-AgZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tOu-fu-xFn"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="esM-gZ-8CY" firstAttribute="leading" secondItem="tOu-fu-xFn" secondAttribute="leading" constant="117" id="04j-Cs-aVh"/>
+                            <constraint firstItem="esM-gZ-8CY" firstAttribute="top" secondItem="tOu-fu-xFn" secondAttribute="top" constant="163" id="xh0-qw-K58"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Files" image="doc" catalog="system" id="yrv-ev-xIq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tX8-sS-1km" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="684"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="Aeg-FD-NsK">
+            <objects>
+                <viewController id="o6T-4f-Azn" customClass="ViewController" customModule="__HW7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EWT-eq-0Ii">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;View notifications&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2L-wV-Lg5">
+                                <rect key="frame" x="117" y="225" width="159" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="2GH-hf-rGu"/>
+                                    <constraint firstAttribute="height" constant="28" id="zX5-iP-9ZR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TnI-VU-Evy"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="Y2L-wV-Lg5" firstAttribute="top" secondItem="TnI-VU-Evy" secondAttribute="top" constant="166" id="B1d-2x-Iy9"/>
+                            <constraint firstItem="Y2L-wV-Lg5" firstAttribute="leading" secondItem="TnI-VU-Evy" secondAttribute="leading" constant="117" id="O3h-5m-7Nd"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="ring.circle" catalog="system" id="yne-Cx-ReE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TzM-az-PPm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2710.6870229007632" y="3.5211267605633805"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="tav-Y8-cRd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rVY-DI-tpZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="star" catalog="system" id="diG-0b-Fba"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HWw-HW-tNr">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WED-kB-qOf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kg0-oH-Hyz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.44274809160299" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clock" catalog="system" width="128" height="123"/>
+        <image name="doc" catalog="system" width="115" height="128"/>
+        <image name="ring.circle" catalog="system" width="128" height="123"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
